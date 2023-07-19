@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barbie Truck System by Briyith Portillo V30355033</title>
+</head>
+<style>
+  :root {
+    background-color: rgba(255, 0, 0, 0.15);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h1 {
+    text-align: center;
+    text-decoration: dotted;
+    margin-top: 15%;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #carList {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    flex-wrap: wrap-reverse;
+  }
+  input {
+    width: 300px;
+    padding: 3px
+  }
+  button {
+    width: 310px;
+    padding: 7px
+  }
+  .child {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  strong {
+    text-align: center;
+  }
+</style>
+<body>
+  <h1>Car Maintenance System <br> by Briyith Portillo V30355033</h1>
+  <div class="container">
+    <div class="flex">
+      <form id="carForm">
+        <label for="carName">Car Name:</label><br>
+        <input type="text" id="carName" required> <br><br>
+    
+        <label for="lastMaintenanceDate">Last Maintenance Date:</label><br>
+        <input type="date" id="lastMaintenanceDate" required> <br><br>
+    
+        <label for="maintenanceInterval">Maintenance Interval (in days):</label><br>
+        <input type="number" id="maintenanceInterval" required> <br><br>
+    
+        <button type="submit">Add Car</button> <br><br>
+      </form>
+    </div>
+    <div id="carList">
+    </div>
+    <br><br>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
